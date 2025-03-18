@@ -1,118 +1,221 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
   <title>Articles - FreeCamp</title>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #1e1e2f;
+      padding: 20px;
+      height: 100vh;
+      overflow-y: auto;
+      border-right: 2px solid #444;
+      animation: slideIn 0.5s ease;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .sidebar h3 { color: #e91e63; font-size: 24px; }
+
+    .sidebar ul li a {
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      padding: 8px 0;
+      transition: color 0.3s;
+    }
+
+    .sidebar ul li a:hover { color: #fff; }
+
+    .articles-section { flex-grow: 1; padding: 20px; }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      overflow-x: hidden;
+      animation: slideInRight 0.8s ease;
+    }
+
+    @keyframes slideInRight {
+      from { opacity: 0; transform: translateX(20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .article-card {
+      background-color: #29293d;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .article-card a { color: #e91e63; text-decoration: none; }
+    .article-card a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .sidebar { display: none; }
+      .articles-section { padding: 10px; }
+    }
+  </style>
 </head>
 <body class="dark-theme">
-  <!-- Header Section -->    
   <header>
-    <div id="navbar"></div>
+    <nav class="navbar">
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div class="brand">
+        FreeCamp
+        <img src="images/logo.png" alt="FreeCamp Logo" class="logo" />
+      </div>
+      <div class="nav-buttons">
+        <div class="menu">
+          <button class="menu-btn">Menu ▾</button>
+          <div class="dropdown">
+            <a href="#">Tutorials</a>
+            <a href="#">Reference</a>
+            <a href="../partials/articles.html">Articles</a>
+            <a href="#">Forum</a>
+            <a href="#">Compiler</a>
+          </div>
+        </div>
+        <button class="sign-in-btn">Sign In</button>
+        <button class="lang-btn">🌐</button>
+      </div>
+    </nav>
   </header>
 
-  <!-- Articles Section -->
-  <section class="articles-section">
-    <h1>Explore Our Articles</h1>
-    <p>Read the latest articles on programming, software engineering, and tech insights.</p>
+  <div class="main-container" style="display: flex;">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#">C++</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">Data Structures</a></li>
+        <li><a href="#">Algorithms</a></li>
+        <li><a href="#">Machine Learning</a></li>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Software Engineering</a></li>
+        <li><a href="#">Cybersecurity</a></li>
+        <li><a href="#">Cloud Computing</a></li>
+      </ul>
+    </aside>
 
-    <div class="articles-grid">
-      <div class="article-card">
-       <a href=""> <h3>How to avoid bugs</h3></a>
-       <p>By  PVSCoder</p>
-        <p>Date: March 1, 2025</p>
-        <p>Score: 9.5</p>
-        
+    <section class="articles-section">
+      <h1>Explore Our Articles</h1>
+      <p>Read the latest articles on programming, software engineering, and tech insights.</p>
+      <div class="articles-grid">
+        <div class="article-card">
+          <a href=""><h3>How to avoid bugs</h3></a>
+          <p>By PVSCoder</p>
+          <p>Date: March 1, 2025</p>
+          <p>Score: 9.5</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
+        <div class="article-card">
+          <a href=""><h3>Learning Computer Programming Terminology</h3></a>
+          <p>Date: March 5, 2025</p>
+          <p>Score: 8.7</p>
+        </div>
       </div>
-      <div class="article-card">
-       <a href=""><h3>Learning Computer Programming Terminology</h3></a>
-        <p>Date: March 5, 2025</p>
-        <p>Score: 8.7</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>C++ class for generate Fibonacci series</h3></a>
-        <p>Date: March 7, 2025</p>
-        <p>Score: 9.0</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>C++ casting</h3></a>
-        <p>Date: March 10, 2025</p>
-        <p>Score: 8.9</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>Safe Clearing of Private Data</h3></a>
-        <p>Date: March 12, 2025</p>
-        <p>Score: 9.2</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>How I Learned A Vital Borland C++ Coding Technique I Couldn't Learn Alone </h3></a>
-        <p>Date: March 15, 2025</p>
-        <p>Score: 9.1</p>
-      </div>
-      <div class="article-card">
-       <a href=""><h3>Sierpinski Triangle Fractal - The easiest way to produce randomness</h3></a>
-        <p>Date: March 17, 2025</p>
-        <p>Score: 8.8</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>Koch Fractal - One of the easiest algorithms with graphics</h3></a>
-        <p>Date: March 20, 2025</p>
-        <p>Score: 9.4</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>10 tips to be productive in CLion, a cross-platform C/C++ IDE</h3></a>
-        <p>Date: March 22, 2025</p>
-        <p>Score: 9.3</p>
-      </div>
-      <div class="article-card">
-       <a href=""><h3>Fibonacii at its best</h3></a>
-        <p>Date: March 25, 2025</p>
-        <p>Score: 8.6</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>Split a String</h3></a>
-        <p>Date: March 27, 2025</p>
-        <p>Score: 9.2</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>Finding Skype's Default Account Name</h3></a>
-        <p>Date: March 29, 2025</p>
-        <p>Score: 8.7</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>Virtual Method Table and accident prevention</h3></a>
-        <p>Date: March 31, 2025</p>
-        <p>Score: 9.0</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>Dynamically sorting both keys and values</h3></a>
-        <p>Date: April 1, 2025</p>
-        <p>Score: 8.9</p>
-      </div>
-      <div class="article-card">
-        <a href=""><h3>Installing and Configuring Visual C++ and GLUT</h3></a>
-        <p>Date: April 3, 2025</p>
-        <p>Score: 9.6</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <script src="js/utils.js"></script>
   <script src="js/components.js"></script>
   <script src="js/script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      fetch('partials/navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
-        });
-    });
-  </script>
 </body>
 </html>
