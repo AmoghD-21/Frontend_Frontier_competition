@@ -1,0 +1,18 @@
+/* css/style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    background: linear-gradient(to bottom, rgba(92, 31, 51, 1), rgba(16, 42, 92, 1));
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+  

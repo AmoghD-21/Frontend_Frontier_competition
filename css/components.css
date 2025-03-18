@@ -1,0 +1,76 @@
+/* css/components.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgb(229, 231, 235), rgb(200, 203, 207));
+    padding: 10px 20px;
+    color: #2c3e50;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+  }
+  
+  .brand {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .menu {
+    position: relative;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: #34495e;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .menu-btn:hover + .dropdown, .dropdown:hover {
+    display: block;
+  }
+  
+  .dropdown a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .dropdown a:hover {
+    background-color: #1abc9c;
+  }
