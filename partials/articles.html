@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <title>Articles - FreeCamp</title>
+</head>
+<body class="dark-theme">
+  <!-- Header Section -->
+  <header>
+    <div id="navbar"></div>
+  </header>
+
+  <!-- Articles Section -->
+  <section class="articles-section">
+    <h1>Explore Our Articles</h1>
+    <p>Read the latest articles on programming, software engineering, and tech insights.</p>
+
+    <div class="articles-grid">
+      <div class="article-card">
+        <h3>Mastering JavaScript</h3>
+        <p>Date: March 1, 2025</p>
+        <p>Score: 9.5</p>
+      </div>
+      <div class="article-card">
+        <h3>CSS for Beginners</h3>
+        <p>Date: March 5, 2025</p>
+        <p>Score: 8.7</p>
+      </div>
+      <div class="article-card">
+        <h3>Web Accessibility Tips</h3>
+        <p>Date: March 7, 2025</p>
+        <p>Score: 9.0</p>
+      </div>
+      <div class="article-card">
+        <h3>Frontend Frameworks</h3>
+        <p>Date: March 10, 2025</p>
+        <p>Score: 8.9</p>
+      </div>
+      <div class="article-card">
+        <h3>React vs Angular</h3>
+        <p>Date: March 12, 2025</p>
+        <p>Score: 9.2</p>
+      </div>
+      <div class="article-card">
+        <h3>APIs Simplified</h3>
+        <p>Date: March 15, 2025</p>
+        <p>Score: 9.1</p>
+      </div>
+      <div class="article-card">
+        <h3>Understanding Git</h3>
+        <p>Date: March 17, 2025</p>
+        <p>Score: 8.8</p>
+      </div>
+      <div class="article-card">
+        <h3>Design Systems Guide</h3>
+        <p>Date: March 20, 2025</p>
+        <p>Score: 9.4</p>
+      </div>
+      <div class="article-card">
+        <h3>Machine Learning Basics</h3>
+        <p>Date: March 22, 2025</p>
+        <p>Score: 9.3</p>
+      </div>
+      <div class="article-card">
+        <h3>Data Structures 101</h3>
+        <p>Date: March 25, 2025</p>
+        <p>Score: 8.6</p>
+      </div>
+      <div class="article-card">
+        <h3>Next.js for Beginners</h3>
+        <p>Date: March 27, 2025</p>
+        <p>Score: 9.2</p>
+      </div>
+      <div class="article-card">
+        <h3>SEO Best Practices</h3>
+        <p>Date: March 29, 2025</p>
+        <p>Score: 8.7</p>
+      </div>
+      <div class="article-card">
+        <h3>Cybersecurity Basics</h3>
+        <p>Date: March 31, 2025</p>
+        <p>Score: 9.0</p>
+      </div>
+      <div class="article-card">
+        <h3>Database Management</h3>
+        <p>Date: April 1, 2025</p>
+        <p>Score: 8.9</p>
+      </div>
+      <div class="article-card">
+        <h3>Python for Data Science</h3>
+        <p>Date: April 3, 2025</p>
+        <p>Score: 9.6</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/utils.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('partials/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
