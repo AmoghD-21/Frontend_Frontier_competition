@@ -52,3 +52,5 @@ Technologies Used
 -HTML
 -CSS
 -JS
+
+-The prettier package is used here only for Git code structure.
