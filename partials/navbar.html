@@ -1,34 +1,39 @@
 <!-- partials/navbar.html --> 
+ <link rel="stylesheet" href="../css/style.css">
 <nav class="navbar">
-    <!-- Search Bar -->
-    <div class="search-bar">
-      <input type="text" placeholder="Search..." />
-    </div>
-  
-    <!-- Logo/Brand Name -->
-    <div class="brand">
-      cplusplus.com
-      <img src="images/logo.png" alt="" class="logo" />
-    </div>
-  
-    <!-- Navigation Buttons -->
-    <div class="nav-buttons">
-      <!-- Menu Button with Dropdown -->
-      <div class="menu">
-        <button class="menu-btn">Menu ▾</button>
-        <div class="dropdown">
-          <a href="#">Tutorials</a>
-          <a href="../partials/reference.html">Reference</a>
-          <a href="../partials/articles.html">Articles</a>
-          <a href="../partials/forum.html">Forum</a>
-          <a href="#">Compiler</a>
-        </div>
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
+  </div>
+
+  <!-- Logo/Brand Name with SVG and Image -->
+  <div class="brand">
+    <svg xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 120 36">
+      <text x="0" y="22" textLength="120" lengthAdjust="spacingAndGlyphs" font-family="Roboto,sans-serif" font-size="22px" font-style="italic" font-weight="bold" style="fill:#fff">cplusplus</text>
+      <text id="tld" x="80" y="34" textLength="38" lengthAdjust="spacingAndGlyphs" font-family="Roboto,arial" font-size="12px" font-style="italic" font-weight="bold" style="fill:#cde">.com</text>
+    </svg>
+    
+    <!-- Animated Image -->
+    <img src="../images/images.v.jpeg" alt="Logo Image" class="animated-logo" />
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-buttons">
+    <div class="menu">
+      <button class="menu-btn">Menu ▾</button>
+      <div class="dropdown">
+        <a href="#">Tutorials</a>
+        <a href="../partials/reference.html">Reference</a>
+        <a href="../partials/articles.html">Articles</a>
+        <a href="../partials/forum.html">Forum</a>
+        <a href="#">Compiler</a>
       </div>
-  
-      <!-- Sign In Button -->
-      <button class="sign-in-btn"><a href="../partials/Authentication.html">Sign In</a></button>
-  
-      <!-- Multi-language Symbol -->
-      <button class="lang-btn">🌐</button>
     </div>
-  </nav>   
+
+    <button class="sign-in-btn">
+      <a href="../partials/Authentication.html">Sign In</a>
+    </button>
+
+    <button class="lang-btn">🌐</button>
+  </div>
+</nav>
