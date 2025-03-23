@@ -114,3 +114,63 @@ body {
     color: #333;
   }
   
+
+  /* Section Styling */
+.animated-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.animated-section h2 {
+  color: #e91e63;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Container for Divs */
+.animated-container {
+  display: flex;
+  flex-direction: column; /* Each div in one row */
+  gap: 20px;
+  padding: 0 5%;
+}
+
+/* Animated Card Styles */
+.animated-card {
+  background: linear-gradient(145deg, #29293d, #1e1e2f);
+  color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 0.6s ease;
+  text-align: left;
+}
+
+/* Hover Effect */
+.animated-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(233, 30, 99, 0.6);
+}
+
+/* Fade-In Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .animated-card {
+    padding: 30px;
+    font-size: 16px;
+  }
+}
