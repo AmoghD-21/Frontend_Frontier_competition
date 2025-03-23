@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <title>FreeCamp Forum</title>
+</head>
+<body class="dark-theme">
+  <!-- Header Section with Navbar -->
+  <header id="navbar-container"></header>
+
+  <!-- Forum Layout Section -->
+  <section class="forum-container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar left-sidebar">
+      <h3>C++</h3>
+      <ul>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Reference</a></li>
+        <li><a href="../partials/articles.html">Articles</a></li>
+        <li><a href="#">Forum</a></li>
+      </ul>
+
+      <h3>Forum</h3>
+      <ul>
+        <li><a href="#">Beginners</a></li>
+        <li><a href="#">Windows Programming</a></li>
+        <li><a href="#">UNIX/Linux Programming</a></li>
+        <li><a href="#">General C++ Programming</a></li>
+        <li><a href="#">Lounge</a></li>
+        <li><a href="#">Jobs</a></li>
+      </ul>
+    </aside>
+
+    <!-- Forum Content Section -->
+    <section class="forum-content">
+      <h2>Forum Discussions</h2>
+      <div class="forum-grid">
+        <div class="forum-card">
+          <h4><a href="#">Beginners</a></h4>
+          <p>Discussions about C++ programming for beginners.</p>
+          <span>Last active: Mar 19, 2025 at 8:02am by TheIdeasMan</span>
+        </div>
+        <div class="forum-card">
+          <h4><a href="#">Windows Programming</a></h4>
+          <p>Win32, MFC, ATL, C++/CLI, .NET, and more.</p>
+          <span>Last active: Mar 12, 2025 at 9:29pm by seeplus</span>
+        </div>
+        <div class="forum-card">
+          <h4><a href="#">UNIX/Linux Programming</a></h4>
+          <p>Programming C++ for UNIX and Linux systems.</p>
+          <span>Last active: Mar 3, 2025 at 2:07am by spistol</span>
+        </div>
+
+        <div class="forum-card">
+            <h4><a href="#">UNIX/Linux Programming</a></h4>
+            <p>Programming C++ for UNIX and Linux systems.</p>
+            <span>Last active: Mar 3, 2025 at 2:07am by spistol</span>
+          </div>
+
+          <div class="forum-card">
+            <h4><a href="#">UNIX/Linux Programming</a></h4>
+            <p>Programming C++ for UNIX and Linux systems.</p>
+            <span>Last active: Mar 3, 2025 at 2:07am by spistol</span>
+          </div>
+
+          <div class="forum-card">
+            <h4><a href="#">UNIX/Linux Programming</a></h4>
+            <p>Programming C++ for UNIX and Linux systems.</p>
+            <span>Last active: Mar 3, 2025 at 2:07am by spistol</span>
+          </div>
+      </div>
+    </section>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar right-sidebar">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Online Compiler</a></li>
+        <li><a href="#">Code Examples</a></li>
+      </ul>
+      <h3>Trending Topics</h3>
+      <ul>
+        <li><a href="#">Best C++ Libraries in 2025</a></li>
+        <li><a href="#">Optimizing C++ Code</a></li>
+        <li><a href="#">Debugging Tips and Tricks</a></li>
+      </ul>
+    </aside>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="#">Home page</a> | <a href="#">Privacy policy</a> <br />
+      © FreeCamp, 2025 - All rights reserved - v3.3.4s <br />
+      <a href="#">Spotted an error? Contact us</a>
+    </p>
+  </footer>
+
+  <script src="../js/utils.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/script.js"></script>
+
+  <script>
+    // Load Navbar using fetch
+    fetch('../partials/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading the navbar:', error));
+  </script>
+</body>
+</html>
