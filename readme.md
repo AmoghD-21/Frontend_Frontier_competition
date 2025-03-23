@@ -9,6 +9,8 @@ Welcome to cplusplus — A modern platform to explore articles, discussions, and
 - C++ library references and tutorials.
 - Forum for discussions.
 - Authentication and user management.
+-Multilanguage option is given
+-Compiler option is given in Menu
 
 Unstop Compeetition/
 ├── css/
